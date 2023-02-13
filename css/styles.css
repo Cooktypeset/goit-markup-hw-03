@@ -39,6 +39,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 button {
   cursor: pointer;
@@ -86,21 +88,21 @@ button {
   padding-bottom: 120px;
 }
 .page-hero-container {
-  text-align: center;
-}
-/* .hero-background { 
+  justify-content: center;
+  margin-right: 0;
   height: 600px;
-}*/
+}
 .hero {
+  display: flex;
   width: 496px;
-  margin-top: 188px;
   margin-bottom: 48px;
-  margin-left: 448px;
-  margin-right: 448px;
+  margin-left: 472px;
+  margin-right: 472px;
 }
 .modal-btn-container {
   display: flex;
   text-align: center;
+  justify-content: center;
   margin: 48px 635px 188px 636px;
 }
 .page-start-container {
@@ -140,6 +142,16 @@ button {
 .aside-container-item {
   display: flex;
 }
+.aside-item {
+  padding: 0px 0px 32px;
+  flex-direction: column;
+  background-color: var(--phon-white-color);
+  gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .aside-item:not(:nth-child(4n)) {
   margin-right: 24px;
 }
@@ -152,8 +164,13 @@ button {
   margin-bottom: 32px;
   text-align: center;
 }
-/*============================= FLEXFOOTER=============================== */
 
+/*============================= FLEXFOOTER=============================== */
+.holdesr {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
 /* ==============================FLEXFOOTER=============================================== */
 
 /* ==============================PORTFOLIOFLEX===================== */
@@ -178,6 +195,13 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+.picture-item {
+  width: 360px;
+  background: var(--phon-white-color);
+  border: 1px solid var(--additional-color);
+  margin-bottom: 48px;
+}
+
 .picture-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
@@ -190,6 +214,9 @@ button {
 }
 /* ===============================================HEADER================================== */
 /*===================================LOGO===============================*/
+.top-header {
+  border-bottom: 1px solid var(--additional-color);
+}
 .logo-span {
   color: var(--ocean-color);
 }
@@ -239,14 +266,17 @@ button {
 /*==================================MAIN SECTION1==============================*/
 .hero-background {
   background: var(--main-title-color);
+  margin-left: 720px;
+  margin-right: 720px;
 }
 .hero {
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--phon-white-color);
-  text-align: center;
 }
 .modal-btn {
   flex-direction: row;
@@ -328,12 +358,18 @@ button {
 }
 .aside {
   background-color: var(--phon-special-color);
+  margin-left: 720px;
+  margin-right: 720px;
 }
 /*================================FOOTER=====================================*/
 .holder {
   width: 1440px;
   height: 310px;
   background: var(--main-title-color);
+  margin-left: 720px;
+  margin-right: 720px;
+
+  top: 1764px;
 }
 .holder-span {
   font-family: 'Raleway', sans-serif;
@@ -346,13 +382,24 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--additional-color);
+  margin-top: 16px;
+  width: 264px;
 }
 /* ==========================================PORTFOLIO===================================== */
 /* HEADER IN STUDIO */
-.caption,
-.captions {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .modal-button:hover,
 .modal-button:focus {
   background: var(--phon-special-color);
@@ -374,10 +421,12 @@ button {
 .button-text:active {
   color: var(--phon-white-color);
 }
+
 .images-picture {
   background: var(--phon-white-color);
   border: 1px solid var(--additional-color);
 }
+
 .images-subject {
   font-weight: 500;
   font-size: 20px;
