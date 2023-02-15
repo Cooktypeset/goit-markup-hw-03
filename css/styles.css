@@ -187,20 +187,17 @@ button {
   margin-right: 24px;
 }
 .images-subject {
-  margin-top: 32px;
   margin-bottom: 8px;
 }
-.images-text {
-  margin-bottom: 32px;
-}
+
 /* ===============================================HEADER================================== */
 /*===================================LOGO===============================*/
 .top-header {
   border-bottom: 1px solid var(--additional-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(-0.07deg);
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1440px;
 }
 .logo-span {
@@ -252,8 +249,8 @@ button {
 /*==================================MAIN SECTION1==============================*/
 .hero-background {
   background: var(--main-title-color);
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1440px;
 }
 .hero {
@@ -300,11 +297,11 @@ button {
 /*=====================================SECTION2==============================*/
 .start {
   width: 1440px;
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.header {
-  display: none;
+.start-paragraph-text {
+  width: 264px;
 }
 .start-paragraph {
   font-weight: 500;
@@ -320,8 +317,8 @@ button {
 /*=====================================SECTION3=============================*/
 .content {
   width: 1440px;
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .subject {
   font-weight: 700;
@@ -357,16 +354,16 @@ button {
 }
 .aside {
   background-color: var(--phon-special-color);
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1440px;
 }
 /*================================FOOTER=====================================*/
 .holder {
   width: 1440px;
   background: var(--main-title-color);
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
   top: 1764px;
 }
 .holder-span {
@@ -402,8 +399,8 @@ button {
 }
 .section-portfolio {
   width: 1440px;
-  margin-left: 720px;
-  margin-right: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-button {
   border: 1px solid var(--additional-color);
@@ -432,6 +429,7 @@ button {
   border-top: none;
   width: 360px;
   margin-bottom: 48px;
+  padding: 32px 16px;
 }
 .images-subject {
   font-weight: 500;
