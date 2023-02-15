@@ -91,24 +91,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
-  margin-left: 230px;
   height: 600px;
+  width: 1440px;
 }
-/* .hero { 
-  display: flex;
-  position: absolute;
-  width: 496px;
-  margin-left: auto;
-   margin-right: auto; 
-}*/
-/* .modal-btn-container { 
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  max-width: 169px;
-}*/
 .modal-btn {
   display: flex;
   align-items: center;
@@ -175,14 +160,6 @@ button {
   text-align: center;
 }
 
-/*============================= FLEXFOOTER=============================== */
-.holdesr {
-  display: flex;
-  justify-content: center;
-  margin-right: 0;
-}
-/* ==============================FLEXFOOTER=============================================== */
-
 /* ==============================PORTFOLIOFLEX===================== */
 .page-buttons-container {
   display: flex;
@@ -194,6 +171,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 .buttons-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -205,13 +183,6 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-.picture-item {
-  width: 360px;
-  background: var(--phon-white-color);
-  border: 1px solid var(--additional-color);
-  margin-bottom: 48px;
-}
-
 .picture-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
@@ -226,6 +197,11 @@ button {
 /*===================================LOGO===============================*/
 .top-header {
   border-bottom: 1px solid var(--additional-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-0.07deg);
+  margin-left: 720px;
+  margin-right: 720px;
+  width: 1440px;
 }
 .logo-span {
   color: var(--ocean-color);
@@ -278,16 +254,17 @@ button {
   background: var(--main-title-color);
   margin-left: 720px;
   margin-right: 720px;
+  width: 1440px;
 }
 .hero {
-  max-width: 496px;
-  justify-content: center;
-  align-items: center;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--phon-white-color);
+  padding-bottom: 48px;
+  text-align: center;
 }
 .modal-btn {
   flex-direction: row;
@@ -321,6 +298,11 @@ button {
   background: var(--ocean-color);
 }
 /*=====================================SECTION2==============================*/
+.start {
+  width: 1440px;
+  margin-left: 720px;
+  margin-right: 720px;
+}
 .header {
   display: none;
 }
@@ -336,6 +318,11 @@ button {
   color: var(--main-color);
 }
 /*=====================================SECTION3=============================*/
+.content {
+  width: 1440px;
+  margin-left: 720px;
+  margin-right: 720px;
+}
 .subject {
   font-weight: 700;
   font-size: 36px;
@@ -372,15 +359,14 @@ button {
   background-color: var(--phon-special-color);
   margin-left: 720px;
   margin-right: 720px;
+  width: 1440px;
 }
 /*================================FOOTER=====================================*/
 .holder {
   width: 1440px;
-  height: 310px;
   background: var(--main-title-color);
   margin-left: 720px;
   margin-right: 720px;
-
   top: 1764px;
 }
 .holder-span {
@@ -397,6 +383,9 @@ button {
   margin-top: 16px;
   width: 264px;
 }
+.page-footer-holder {
+  margin-left: 156px;
+}
 /* ==========================================PORTFOLIO===================================== */
 /* HEADER IN STUDIO */
 .visually-hidden {
@@ -411,34 +400,39 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.modal-button:hover,
-.modal-button:focus {
-  background: var(--phon-special-color);
+.section-portfolio {
+  width: 1440px;
+  margin-left: 720px;
+  margin-right: 720px;
+}
+.modal-button {
   border: 1px solid var(--additional-color);
   border-radius: 4px;
 }
+.modal-button:hover,
+.modal-button:focus {
+  background: var(--phon-special-color);
+}
 .modal-button:active {
   background: var(--accent-hoverfa-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .button-text {
   font-family: inherit;
   font-weight: 500;
   color: var(--ocean-color);
+  padding: 12px 24px;
 }
 .button-text:active {
   color: var(--phon-white-color);
 }
-
-.images-picture {
+.subject-text-container {
   background: var(--phon-white-color);
   border: 1px solid var(--additional-color);
+  border-top: none;
+  width: 360px;
+  margin-bottom: 48px;
 }
-
 .images-subject {
   font-weight: 500;
   font-size: 20px;
