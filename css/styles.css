@@ -73,7 +73,7 @@ button {
 .menu-item:not(:last-child) {
   margin-right: 40px;
 }
-.mail {
+.address-content {
   margin-left: 332px;
 }
 .phone-number {
@@ -91,29 +91,21 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  width: 1440px;
+  flex-direction: column;
 }
 .modal-btn {
   display: flex;
   align-items: center;
-  margin-top: 356px;
-  margin-bottom: 188px;
 }
 .page-start-container {
   display: flex;
 }
-.container-start {
-  display: flex;
-  flex-wrap: wrap;
-}
-.start-container-item {
+.start-item {
   display: flex;
   gap: 24px;
 }
 .start-paragraph {
   margin-bottom: 8px;
-  margin-top: 120px;
 }
 .page-content-container {
   display: flex;
@@ -121,42 +113,36 @@ button {
 }
 .content-container-item {
   display: flex;
+  justify-content: center;
 }
 .content-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 .subject {
   text-align: center;
-  margin-top: 0;
   margin-bottom: 72px;
-}
-.page-aside-container {
-  display: flex;
-  flex-wrap: wrap;
 }
 .aside-container-item {
   display: flex;
+  gap: 24px;
 }
 .aside-item {
   padding: 0px 0px 32px;
   flex-direction: column;
   background-color: var(--phon-white-color);
-  gap: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-
-.aside-item:not(:nth-child(4n)) {
-  margin-right: 24px;
+.container-subtitle-aside {
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
+
 .subtitle {
-  margin-top: 32px;
-  margin-bottom: 8px;
   text-align: center;
 }
 .aside-desc {
-  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -171,9 +157,11 @@ button {
   display: flex;
   align-items: center;
 }
-
-.buttons-item:not(:last-child) {
-  margin-right: 24px;
+.images {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
 }
 .page-picture-container {
   display: flex;
@@ -182,9 +170,6 @@ button {
 .picture-container-item {
   display: flex;
   flex-wrap: wrap;
-}
-.picture-item:not(:nth-child(3n)) {
-  margin-right: 24px;
 }
 .images-subject {
   margin-bottom: 8px;
@@ -198,7 +183,6 @@ button {
   transform: rotate(-0.07deg);
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
 }
 .logo-span {
   color: var(--ocean-color);
@@ -251,7 +235,6 @@ button {
   background: var(--main-title-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
 }
 .hero {
   width: 496px;
@@ -267,7 +250,6 @@ button {
   flex-direction: row;
   padding: 16px 32px;
   gap: 10px;
-  position: absolute;
   background: var(--ocean-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -295,11 +277,6 @@ button {
   background: var(--ocean-color);
 }
 /*=====================================SECTION2==============================*/
-.start {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .start-paragraph-text {
   width: 264px;
 }
@@ -315,11 +292,7 @@ button {
   color: var(--main-color);
 }
 /*=====================================SECTION3=============================*/
-.content {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .subject {
   font-weight: 700;
   font-size: 36px;
@@ -354,17 +327,10 @@ button {
 }
 .aside {
   background-color: var(--phon-special-color);
-  margin-left: auto;
-  margin-right: auto;
-  width: 1440px;
 }
 /*================================FOOTER=====================================*/
 .holder {
-  width: 1440px;
   background: var(--main-title-color);
-  margin-left: auto;
-  margin-right: auto;
-  top: 1764px;
 }
 .holder-span {
   font-family: 'Raleway', sans-serif;
@@ -377,12 +343,10 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--additional-color);
-  margin-top: 16px;
+  padding-top: 16px;
   width: 264px;
 }
-.page-footer-holder {
-  margin-left: 156px;
-}
+
 /* ==========================================PORTFOLIO===================================== */
 /* HEADER IN STUDIO */
 .visually-hidden {
@@ -396,11 +360,6 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.section-portfolio {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .modal-button {
   border: 1px solid var(--additional-color);
@@ -427,8 +386,6 @@ button {
   background: var(--phon-white-color);
   border: 1px solid var(--additional-color);
   border-top: none;
-  width: 360px;
-  margin-bottom: 48px;
   padding: 32px 16px;
 }
 .images-subject {
