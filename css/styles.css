@@ -83,10 +83,7 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .page-hero-container {
   display: flex;
   justify-content: center;
@@ -231,6 +228,10 @@ button {
   color: var(--accent-hoverfa-color);
 }
 /*==================================MAIN SECTION1==============================*/
+.section {
+  padding-top: 188px;
+  padding-bottom: 292px;
+}
 .hero-background {
   background: var(--main-title-color);
   margin-left: auto;
@@ -243,7 +244,7 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--phon-white-color);
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   text-align: center;
 }
 .modal-btn {
@@ -251,7 +252,7 @@ button {
   padding: 16px 32px;
   gap: 10px;
   background: var(--ocean-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px var(--ocean-color);
   border-radius: 4px;
   padding-top: 16px;
   padding-right: 32px;
@@ -277,6 +278,10 @@ button {
   background: var(--ocean-color);
 }
 /*=====================================SECTION2==============================*/
+.start {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
 .start-paragraph-text {
   width: 264px;
 }
@@ -292,7 +297,10 @@ button {
   color: var(--main-color);
 }
 /*=====================================SECTION3=============================*/
-
+.content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .subject {
   font-weight: 700;
   font-size: 36px;
@@ -327,10 +335,14 @@ button {
 }
 .aside {
   background-color: var(--phon-special-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /*================================FOOTER=====================================*/
 .holder {
   background: var(--main-title-color);
+  padding-top: 60px;
+  padding-bottom: 188px;
 }
 .holder-span {
   font-family: 'Raleway', sans-serif;
