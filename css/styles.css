@@ -142,9 +142,9 @@ button {
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+  justify-content: center;
 }
 .images {
   display: flex;
